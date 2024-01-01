@@ -1,7 +1,33 @@
-<html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Page Title</title>
+    <!-- Additional meta tags, stylesheets, or scripts can be included here -->
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+  </head>
   <body>
-    <h1>
-      Hellow World!
-    </h1>
+    <div class="Nav">
+      <div><a>Home</a></div>
+      <div><a>TV</a></div></div>
+      <div><a>Lighting</a></div>
+      <div><a>Portfolio</a></div>
+      <div class="login">
+        <a>Login</a>
+        <div class="login-box">
+          Test
+          <form action="/login" method="post">
+            <label for="username">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="body">Body</div>
+    <div class="footer">Footer</div>
   </body>
+
 </html>

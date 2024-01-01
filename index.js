@@ -24,6 +24,10 @@ app.get('/', (req, res) => {
   res.render('index.ejs');
 });
 
+app.get('remote', verifyToken, (req, res) => {
+  res.send('Success');
+});
+
 app.get('/test', verifyToken, (req, res) => {
   res.json({message: 'success'});
 })
